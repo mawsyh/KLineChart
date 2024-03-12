@@ -25,7 +25,7 @@ function log (templateText: string, tagStyle: string, messageStyle: string, api:
 
 export function logWarn (api: string, invalidParam: string, append?: string): void {
   log(
-    '%c😑 klinecharts warning%c %s%s%s',
+    '%c warn:%c %s%s%s',
     'padding:3px 4px;border-radius:2px;color:#ffffff;background-color:#FF9600',
     'color:#FF9600',
     api, invalidParam, append ?? ''
@@ -34,7 +34,7 @@ export function logWarn (api: string, invalidParam: string, append?: string): vo
 
 export function logError (api: string, invalidParam: string, append?: string): void {
   log(
-    '%c😟 klinecharts error%c %s%s%s',
+    '%c error:%c %s%s%s',
     'padding:3px 4px;border-radius:2px;color:#ffffff;background-color:#F92855;',
     'color:#F92855;',
     api, invalidParam, append ?? ''
